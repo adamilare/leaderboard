@@ -1,7 +1,100 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.hello {
-  color: red;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  margin: 40px auto;
+  text-align: center;
+}
+
+#score-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+#leaderboard,
+#leaderboard-list,
+#leaderboard-add,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#leaderboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  border: 2px solid #333;
+}
+
+.score-item {
+  padding-left: 10px;
+}
+
+.score-item > span {
+  padding-right: 20px;
+}
+
+.score-item:nth-child(even) {
+  background-color: #ccc;
+}
+
+form {
+  margin-top: 30px;
+  gap: 20px;
+}
+
+input {
+  padding: 5px 10px;
+  height: 40px;
+}
+
+button {
+  padding: 5px 10px;
+  width: 100px;
+  display: inline;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  #leaderboard {
+    flex-direction: row;
+    max-width: 700px;
+    justify-content: space-between;
+  }
+
+  #leaderboard-list,
+  #leaderboard-add {
+    flex: 1;
+  }
+
+  hr {
+    display: block;
+    margin: 0 30px;
+  }
 }
