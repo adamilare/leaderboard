@@ -67,7 +67,7 @@ The project implementation introduces developers to async/callback/promise calls
 - **Built with Webpack development environment**
 - **Basic Leaderboard operations ;**
 
-  - Add Score,
+  - Add new score,
   - List added items,
   - Refresh leaderboard
 
